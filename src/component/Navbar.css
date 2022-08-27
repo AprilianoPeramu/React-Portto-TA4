@@ -1,0 +1,42 @@
+
+ .Nav {
+    list-style: none;
+    text-decoration:none !important;
+    color: rgb(255, 255, 255) !important;
+    display: flex;
+    align-items: center;
+   }
+   .nav-link-active{
+       text-decoration:none !important;
+       font-size: 16px;
+       margin: 10px;
+       color: #fff!important;
+       font-weight: 500;
+   } 
+   .navbar-nav{
+    text-align: right;
+    margin-right: 20px;
+   }
+   .navbar.brand oce{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 20px;
+   }
+   .navbarAja .navbar-toggler{
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+   }
+   .navbar .fa{
+    color: #fff!important;
+    font-size: 26px;
+   }
+   .nav-link-active:hover{
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+   } 
+   @media only screen and (max-width: 1000px){
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+   }

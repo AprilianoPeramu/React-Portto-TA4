@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500;700;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.home{
+  font-family: 'Poppins', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)),url("../src/assets/main.jpg");
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+p{
+  font-size: 100px;
+}
+span{
+  color: rgb(5, 176, 255);
+}
+nav {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+p {
+  margin: 0;
+  font-size: 13px;
+  color: #fff;
+}
+.home h1{
+  font-size: 75px;
+  font-weight: 600;
+text-align: center;
+}
+.text{
+  color: white;
+  display: flex;
+  text-align: right;
+}
+nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: inherit;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all .2s;
+}
+nav a:hover {
+  color: #ffffff;
+}
+button {
+  height: 30px;
+  font-weight: bold;
+}
+.btn {
+  color: hsl(186, 100%, 98%);
+  font-size: 35px;
+  border-radius: 4px;
+}
+.btnabout{
+  color:black;
+  text-Decoration:none;
+  font-Size:30px
+}
+
+ .btnabout:hover{
+color:white;
+}
+.about{
+  min-height: 100vh;
+  background: url("./assets/bg2.jpg");
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.h1about{
+  margin-top: 150px;
+  color: white;
+
+  
+}
+.h2about{
+  color: #fff;
+}
+.gambarA{
+  height: 300px;
+  width:300px;
+  object-fit: cover;
+  border:1rem solid #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.1);
+  margin-top: 300px;
+}
+.skill{
+  min-height: 100vh;
+   background: url(./assets/bg3.jpg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.col .text-skill h1{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ .right span{
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+ .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+ .right .html::before{
+  width: 80%;
+}
+ .right .css::before{
+  width: 70%;
+}
+.right .js::before{
+  width: 60%;
+}
+.right .react::before{
+  width: 65%;
+}
+.footer{
+  height: 20px;
+  font-size: 10px;
+  color: #fffdfd;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: black;
+}
+@media screen and (max-width:490px){
+  .oce{
+  font-size: 40px;
+}
+.home{
+  font-size: 2px;
+}
+  div .text{
+    font-size: 40px;
   }
 }
+div .blog{
+  min-height: 100vh;
+  background: url("./assets/bg3.jpg");
+  display: flex;
+  align-items: center;
+
+}
+.jarakblog{
+  margin-top: 100px;
+  color: #fff;
+}
+.mfive{
+  font-size: 20px;
+}
+.card-img-top{
+  width: 500px;
+}
+.about{
+  background: url("./assets/bg2.jpg"); 
+  
+ }
+   .h1about{
+   margin-top: 250px;
+   color: black;
+   }
+  .h2about{
+    color: black;
+  }
+ .gambarA{
+  height: 300px;
+   width: 300px;
+   border-radius: .5rem;
+   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+  }
+  .teks{
+    font-size: 20px;
+  }
+  .project{
+    margin-bottom: 100px;
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    
+      position:relative;
+      overflow: hidden;
+  }
+  .jarakblog{
+    margin-top: 150px;
+    color: #fff;
+  }
+  .mfive{
+    font-size: 9px;
+  }
+  .teks{
+    color: #fff3f3;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(7, 6, 6, 0.708);
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+    font-family: 'Poppins', sans-serif;
+  }
+  .project:hover .teks{
+    transform:translateY(0)
+  }
+  .aturskill{
+  
+    margin-top: 150px;
+  }
+  
