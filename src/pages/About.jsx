@@ -29,7 +29,7 @@ function About(props) {
             </div>
             <div className='text-center mt-3'>
               <button type="button" class="btn btn-dark ms-2k"><Link to='/skills'>Next</Link></button>
-              <button type="button" class="btn btn-secondary ms-1"><a href='https://drive.google.com/file/d/1QfKcbV2-AYz5dtziV011Jc9WWf0f1oL_/view?usp=sharing'>Download CV </a></button>
+              <button type="button" class="btn btn-secondary ms-1"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
             </div>
           </div>
         </div>
