@@ -25,7 +25,7 @@ a {
 .icon a{
     font-size: 24px;
     margin: 2rem;
-    color: black;
+    color: darkslategrey;
 }
 
 .icons a{
@@ -54,7 +54,7 @@ span{
 
 hr{
     width: 300px;
-    border-top: 2px solid black;
+    border-top: 2px solid darkslategrey;
     margin: auto;
 }
 

@@ -9,9 +9,11 @@ import Footer from './pages/Footer';
 
 
 
-function App() {
+const App = ()=> {
+  
+
   return (
-    <>
+    <div className='app'>
       <Navbar />
 
 
@@ -22,7 +24,7 @@ function App() {
         <Route path='/blog' element={<Blog />}/>
       </Routes>
       <Footer />
-    </>
+      </div>
   );
 }
 

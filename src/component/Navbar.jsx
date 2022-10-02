@@ -1,14 +1,19 @@
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-function NavbarExample() {
+
+
+const NavbarExample = () => {
+
   return (
-    <>
+    <div>
       <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
         <Navbar.Toggle />
+
         <Navbar.Collapse>
           <Container className="d-flex justify-content-center text-center">
             <Nav className=" text-center fw-bold ">
@@ -21,7 +26,7 @@ function NavbarExample() {
           </Container>
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </div>
   );
 }
 
