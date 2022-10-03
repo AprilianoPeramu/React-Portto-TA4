@@ -12,7 +12,7 @@ const NavbarExample = () => {
   return (
     <div>
       <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
-        <Navbar.Toggle />
+        <Navbar.Toggle className="ms-2 mb-2 mt-2"/>
 
         <Navbar.Collapse>
           <Container className="d-flex justify-content-center text-center">
