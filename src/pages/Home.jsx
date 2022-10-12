@@ -56,7 +56,7 @@ const Home = (props) => {
                 <div className="icon mt-4">
                   <a href='https://github.com/AprilianoPeramu'><FaGithub /></a>
                   <a href='https://twitter.com/gorseweebs'><FaTwitter /></a>
-                  <a href='https://www.linkedin.com/in/gorse-peramu-03b962247/'><FaLinkedin /></a>
+                  <a href='https://www.linkedin.com/in/apriliano-peramu-a51706252/'><FaLinkedin /></a>
                 </div>
                 <hr className='mt-4' />
                 <div className='d-flex justify-content-center text-center mt-4'>
