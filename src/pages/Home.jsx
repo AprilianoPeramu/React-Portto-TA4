@@ -25,7 +25,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <container>
+      
         <Navbar bg="dark" variant="dark" className="navbar fixed-top" expand="lg">
 
           <div className="logo mx-4"><a href="#"><img src={Haski} />Gorse</a></div>
@@ -49,7 +49,7 @@ const Home = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 mx-auto text-center">
-                <img className='rounded-circle mb-3' src={Pfp} alt="Profile" width="200" height="200" />
+                <img className='rounded-circle mb-3' src={Pfp} alt="Profile" height="200" />
                 <h2>Hello, My Name Is Apriliano Peramu</h2>
                 <h3>Im Front-End Developer</h3>
 
@@ -82,7 +82,6 @@ const Home = (props) => {
                 </div>
               </div>
               <div className='text-center mt-3'>
-                <button type="button" className="btn btn-dark ms-2k"><HashLink to="#skill">Next</HashLink></button>
                 <button type="button" className="btn btn-secondary ms-1"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
               </div>
             </div>
@@ -249,7 +248,6 @@ const Home = (props) => {
         <footer className='bg-dark justify-content-center text-center align-items-center pb-1'>
           <p className='text-white'>Create By @Gorse Peramu</p>
         </footer>
-      </container>
     </div>
   );
 }
