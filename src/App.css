@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap');
 
+
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding-top: 6rem;
+}
+
 h2{
     font-family: 'JetBrains Mono', monospace;
     color: darkslategrey;
@@ -12,49 +24,83 @@ p{
 
 h3{
     font-family: 'JetBrains Mono', monospace;
-    color: steelblue;
+    color: #1765E7;
 }
 
-a {
+.jumbotron{
+    padding: 6rem;
+    background-color: #7dabfc;
+}
+
+
+.effect{
+    position: relative;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:hover{
+    color: #1765E7;
+}
+
+.effect:after{
+    content: "";
+    position: absolute;
+    background-color: #1765E7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.effect:hover:after{
+    width: 100%;
 }
 
 .icon a{
     font-size: 24px;
     margin: 2rem;
-    color: darkslategrey;
+    color: black;
+}
+
+.iconss{
+    color: black;
 }
 
 .icons a{
     font-size: 16px;
-    color: black;
+    color: white;
     margin: 1 rem;
 }
 
-a:hover{
-    color: steelblue;
-}
-
 span{
-    color: steelblue;
+    color: #1765E7;
 }
 
-.profile{
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+.spas{
+    width: 300px;
+    border-top: 2px solid #1765E7;
+    margin: top;
 }
 
 hr{
     width: 300px;
-    border-top: 2px solid darkslategrey;
+    border-top: 2px solid #1765E7;
     margin: auto;
 }
 

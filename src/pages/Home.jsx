@@ -1,36 +1,255 @@
 import React from 'react';
 import '../App.css'
-import { FaFacebookF, FaGithub, FaTwitter, FaLinkedin, FaAngleDoubleRight } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import { ThemeContext } from '../contexts/Theme';
-import { useContext } from 'react';
+import { FaFacebookF, FaGithub, FaTwitter, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa'
+import Haski from '../assets/haski-logo.png';
+import Pfp from '../assets/Pfp.JPEG';
+import { RiBracesFill } from 'react-icons/ri'
+import Html from '../assets/Html.png';
+import Css from '../assets/Css.png';
+import Js from '../assets/Js.png';
+import Rc from '../assets/Rc.png';
+import Figma from '../assets/Figma.png';
+import Github from '../assets/Github.png';
+import op from '../assets/op.png'
+import hxh from '../assets/hxh.png'
+import jjk1 from '../assets/jjk1.png'
+import { FaEye } from 'react-icons/fa'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { HashLink } from 'react-router-hash-link';
+
 
 const Home = (props) => {
-  const [{theme, isDark}, toggleTheme] = useContext(ThemeContext)
-  console.log("theme", theme);
+
 
   return (
-    <div className='vh-100 d-flex align-items-center' style={{backgroundColor: theme.backgroundColor, color: theme.color }}>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 mx-auto text-center">
-            <h2>Hello, My Name Is Apriliano Peramu</h2>
-            <h3>Im Front-End Developer</h3>
-            
-            <div className="icon mt-4">
-              <a href='https://www.facebook.com/'>{isDark ? "" : ""}<FaFacebookF /></a>
-              <a href='https://github.com/AprilianoPeramu'><FaGithub /></a>
-              <a href='https://twitter.com/gorseweebs'><FaTwitter /></a>
-              <a href='https://www.linkedin.com/in/gorse-peramu-03b962247/'><FaLinkedin /></a>
+    <div>
+      <container>
+        <Navbar bg="dark" variant="dark" className="navbar fixed-top" expand="lg">
+
+          <div className="logo mx-4"><a href="#"><img src={Haski} />Gorse</a></div>
+          <Navbar.Toggle className="ms-2 mb-2 mt-2 mx-4" />
+
+          <Navbar.Collapse>
+            <Container className="d-flex justify-content-end text-center">
+              <Nav className="d-flex justify-content-center text-center">
+                <Nav.Link><HashLink className='effect' to="#">Home</HashLink></Nav.Link>
+                <Nav.Link><HashLink className='effect' to="#about">About</HashLink></Nav.Link>
+                <Nav.Link><HashLink className='effect' to="#skill">Skill</HashLink></Nav.Link>
+                <Nav.Link><HashLink className='effect' to="#blog">Blog</HashLink></Nav.Link>
+                <Nav.Link><HashLink className='effect' to="#contact">Contact</HashLink></Nav.Link>
+              </Nav>
+            </Container>
+          </Navbar.Collapse>
+        </Navbar>
+
+
+        <section className='jumbotron vh-100 d-flex align-items-center' id='home'>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 mx-auto text-center">
+                <img className='rounded-circle mb-3' src={Pfp} alt="Profile" width="200" height="200" />
+                <h2>Hello, My Name Is Apriliano Peramu</h2>
+                <h3>Im Front-End Developer</h3>
+
+                <div className="icon mt-4">
+                  <a href='https://github.com/AprilianoPeramu'><FaGithub /></a>
+                  <a href='https://twitter.com/gorseweebs'><FaTwitter /></a>
+                  <a href='https://www.linkedin.com/in/gorse-peramu-03b962247/'><FaLinkedin /></a>
+                </div>
+                <hr className='mt-4' />
+                <div className='d-flex justify-content-center text-center mt-4'>
+                  <HashLink to="#about" className='iconss'><FaAngleDoubleDown /></HashLink>
+                </div>
+              </div>
             </div>
-            <hr className='mt-4' />
-            <div className='d-flex justify-content-center text-center mt-4'>
-              <button type="button" class="btn btn-dark "><Link to='/about'>Next <FaAngleDoubleRight /></Link></button>
-              <button onClick={toggleTheme} type="button" class="btn btn-dark ms-2">Change Theme</button>
+          </div>
+        </section>
+
+        <div className='about vh-100 d-flex align-items-center' id='about'>
+          <div className='container'>
+            <div className='row text-center'>
+              <h2>About <span>Me</span></h2>
+              <div className="col-lg-7 mx-auto text-center fs-bold mt-3">
+              </div>
+              <div className="row justify-content-center fs-5 text-center">
+                <div className="col">
+                  <p>
+                    I am a graduate of SMA Negeri 1 Remboken in Remboken sub-district, North Sulawesi province,
+                    I have served as vice chairman of the student council and my expertise is problem solving. I really wanted to learn about IT and was very curious so I decided to start IT at the age of 18.
+                  </p>
+                </div>
+              </div>
+              <div className='text-center mt-3'>
+                <button type="button" className="btn btn-dark ms-2k"><HashLink to="#skill">Next</HashLink></button>
+                <button type="button" className="btn btn-secondary ms-1"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <section id="skill">
+          <div className='skills section mb-4'>
+            <div className="container">
+              <h2 className='section__title d-flex justify-content-center mt-4 mb-4 fw-bold'>Skills</h2>
+
+              <div className="skills__container container grid section border">
+                {/* Jenis Skill */}
+                <div className="skills__content">
+                  <h3 className="skills__title mt-3 ">
+                    <RiBracesFill /> FrontEnd Developer
+                  </h3>
+
+                  <div className="skills__info mb-3">
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Html} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">HTML</h3>
+                      <span className="skills__subtitle">Intermediate</span>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Css} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">CSS</h3>
+                      <span className="skills__subtitle">Advance</span>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Js} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">Js</h3>
+                      <span className="skills__subtitle">Intermediate</span>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Rc} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">React Js</h3>
+                      <span className="skills__subtitle">Intermediate</span>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Github} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">Github</h3>
+                      <span className="skills__subtitle">Advance</span>
+                    </div>
+                    <div className="skills__data">
+                      <div className="skills__blob">
+                        <img src={Figma} alt='skills' />
+                      </div>
+
+                      <h3 className="skills__name">Figma</h3>
+                      <span className="skills__subtitle">Basic</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="blog">
+          <div className="container">
+            <div className="text-center my-5 mb-3">
+              <h2>My Projects</h2>
+              <hr />
+            </div>
+
+            <div className="row ">
+              <div className="col-lg-4 col-md-sm-8 mb-3">
+                <div className="card md-2 shadow-sm">
+                  <img src={op} alt="img" width="auto" height="auto" className='img-fluid' />
+
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h3>This is the post title</h3>
+                    </div>
+                    <div className="car-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    </div>
+                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-sm-8 mb-3">
+                <div className="card md-2 shadow-sm">
+                  <img src={hxh} alt="img" width="100%" height="100%" className='img-fluid' />
+
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h3>This is the post title</h3>
+                    </div>
+                    <div className="car-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    </div>
+                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-sm-8 mb-3">
+                <div className="card md-2 shadow-sm">
+                  <img src={jjk1} alt="img" width="100%" height="100%" className='img-fluid' />
+
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h3>This is the post title</h3>
+                    </div>
+                    <div className="car-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    </div>
+                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="contact mb-5" id="contact">
+          <div className="container">
+            <div className="row text-center mb-3">
+              <div className="col">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-md-6">
+                <form>
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nama" aria-describedby="nama" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer className='bg-dark justify-content-center text-center align-items-center pb-1'>
+          <p className='text-white'>Create By @Gorse Peramu</p>
+        </footer>
+      </container>
     </div>
   );
 }
