@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css'
-import { FaFacebookF, FaGithub, FaTwitter, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa'
+import {FaGithub, FaTwitter, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa'
 import Haski from '../assets/haski-logo.png';
 import Pfp from '../assets/Pfp.JPEG';
 import { RiBracesFill } from 'react-icons/ri'
@@ -10,14 +10,13 @@ import Js from '../assets/Js.png';
 import Rc from '../assets/Rc.png';
 import Figma from '../assets/Figma.png';
 import Github from '../assets/Github.png';
-import op from '../assets/op.png'
-import hxh from '../assets/hxh.png'
-import jjk1 from '../assets/jjk1.png'
-import { FaEye } from 'react-icons/fa'
+import pro1 from '../assets/pro1.png'
+import pro2 from '../assets/pro2.png'
+import pro3 from '../assets/pro3.png'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink, } from 'react-router-hash-link';
 
 
 const Home = (props) => {
@@ -28,7 +27,7 @@ const Home = (props) => {
       
         <Navbar bg="dark" variant="dark" className="navbar fixed-top" expand="lg">
 
-          <div className="logo mx-4"><a href="#"><img src={Haski} />Gorse</a></div>
+          <div className="logo mx-4"><HashLink to="#"><img src={Haski} alt="doggo"/>Gorse</HashLink></div>
           <Navbar.Toggle className="ms-2 mb-2 mt-2 mx-4" />
 
           <Navbar.Collapse>
@@ -71,6 +70,7 @@ const Home = (props) => {
           <div className='container'>
             <div className='row text-center'>
               <h2>About <span>Me</span></h2>
+              
               <div className="col-lg-7 mx-auto text-center fs-bold mt-3">
               </div>
               <div className="row justify-content-center fs-5 text-center">
@@ -81,8 +81,8 @@ const Home = (props) => {
                   </p>
                 </div>
               </div>
-              <div className='text-center mt-3'>
-                <button type="button" className="btn btn-secondary ms-1"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
+              <div className='text-center mt-2'>
+                <button type="button" className="btn btn-secondary text-center"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
               </div>
             </div>
           </div>
@@ -91,8 +91,8 @@ const Home = (props) => {
         <section id="skill">
           <div className='skills section mb-4'>
             <div className="container">
-              <h2 className='section__title d-flex justify-content-center mt-4 mb-4 fw-bold'>Skills</h2>
-
+              <h2 className='section__title d-flex justify-content-center mt-4 fw-bold'>Skills</h2>
+              <hr className="mb-3"/>
               <div className="skills__container container grid section border">
                 {/* Jenis Skill */}
                 <div className="skills__content">
@@ -166,48 +166,47 @@ const Home = (props) => {
             <div className="row ">
               <div className="col-lg-4 col-md-sm-8 mb-3">
                 <div className="card md-2 shadow-sm">
-                  <img src={op} alt="img" width="auto" height="auto" className='img-fluid' />
+                  <img src={pro1} alt="img" width="auto" height="auto" className='img-fluid' />
 
                   <div className="card-body">
-                    <div className="card-title">
-                      <h3>This is the post title</h3>
+                    <div className="card-title text-center">
+                      <h3>Web e commarce</h3>
                     </div>
-                    <div className="car-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    <div className="car-text text-center">
+                      <p>G Five Market is a e-commerce website made based on html, css, and js</p>
                     </div>
-                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
+                    
                   </div>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-sm-8 mb-3">
                 <div className="card md-2 shadow-sm">
-                  <img src={hxh} alt="img" width="100%" height="100%" className='img-fluid' />
+                  <img src={pro3} alt="img" width="100%" height="100%" className='img-fluid' />
 
                   <div className="card-body">
-                    <div className="card-title">
-                      <h3>This is the post title</h3>
+                    <div className="card-title text-center">
+                      <h3>Web e commarce</h3>
                     </div>
-                    <div className="car-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    <div className="car-text text-center">
+                      <p>FIVE SHOPE is a web e commarce made using React.js and Context for some logic</p>
                     </div>
-                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
+                    
                   </div>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-sm-8 mb-3">
                 <div className="card md-2 shadow-sm">
-                  <img src={jjk1} alt="img" width="100%" height="100%" className='img-fluid' />
+                  <img src={pro2} alt="img" width="100%" height="100%" className='img-fluid' />
 
                   <div className="card-body">
-                    <div className="card-title">
-                      <h3>This is the post title</h3>
+                    <div className="card-title text-center">
+                      <h3>Web Movie App</h3>
                     </div>
-                    <div className="car-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae!</p>
+                    <div className="car-text text-center">
+                      <p>a web made with html, css, and js that uses an API for list data</p>
                     </div>
-                    <button type="button" class="btn btn-dark ms-2k"><a href='#'>View Demo <FaEye /></a></button>
                   </div>
                 </div>
               </div>
@@ -227,15 +226,15 @@ const Home = (props) => {
                 <form>
                   <div class="mb-3">
                     <label for="nama" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="nama" aria-describedby="nama" />
+                    <input type="text" class="form-control" id="nama" aria-describedby="nama" placeholder='Ketik Nama' />
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder='Ketik Email'/>
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Ketik sesuatu'></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-secondary">Submit</button>
