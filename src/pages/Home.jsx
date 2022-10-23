@@ -82,7 +82,7 @@ const Home = (props) => {
                 </div>
               </div>
               <div className='text-center mt-2'>
-                <button type="button" className="btn btn-secondary text-center"><a href='https://drive.google.com/file/d/1nfWkN1O5Ah7WubBd0Hw7QA_lvPQnFEuY/view?usp=sharing'>Download CV </a></button>
+                <button type="button" className="btn btn-secondary text-center"><a href='https://drive.google.com/file/d/17man4cdBGA8zwz3hgkyZwdBr9xm_P48q/view?usp=sharing'>Download CV </a></button>
               </div>
             </div>
           </div>
