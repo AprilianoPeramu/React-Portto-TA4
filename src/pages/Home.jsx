@@ -250,7 +250,7 @@ const Home = (props) => {
                     <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
                   </div>
 
-                  <button type="submit" class="btn btn-secondary">Submit</button>
+                  <button type="submit" class="btn btn-secondary" value="Send">Submit</button>
                 </form>
               </div>
             </div>
