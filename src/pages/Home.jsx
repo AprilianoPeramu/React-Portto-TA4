@@ -1,4 +1,3 @@
-import React from 'react';
 import '../App.css'
 import {FaGithub, FaTwitter, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa'
 import Haski from '../assets/haski-logo.png';
@@ -17,10 +16,24 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { HashLink, } from 'react-router-hash-link';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 const Home = (props) => {
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_pjt1pqr', 'template_j0zrf5j', form.current, 'NFJoUVFJXQaqKs6Nq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <div>
@@ -205,7 +218,7 @@ const Home = (props) => {
                       <h3>Web Movie App</h3>
                     </div>
                     <div className="car-text text-center">
-                      <p>a web made with html, css, and js that uses an API for list data</p>
+                      <p>a website made with html, css, and js that uses an API for list data and picture</p>
                     </div>
                   </div>
                 </div>
@@ -223,18 +236,18 @@ const Home = (props) => {
             </div>
             <div className="row justify-content-center">
               <div className="col-md-6">
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                   <div class="mb-3">
                     <label for="nama" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="nama" aria-describedby="nama" placeholder='Ketik Nama' />
+                    <input type="text" name='user_name' class="form-control" id="nama" aria-describedby="nama" placeholder='Your Name' />
                   </div>
                   <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder='Ketik Email'/>
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name='user_email' class="form-control" id="email" aria-describedby="emailHelp" placeholder='Your Email'/>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Ketik sesuatu'></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
+                    <textarea class="form-control" name='massage' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-secondary">Submit</button>
