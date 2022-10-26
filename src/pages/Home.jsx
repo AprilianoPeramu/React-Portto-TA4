@@ -66,9 +66,9 @@ const Home = (props) => {
                 <h3>Im Front-End Developer</h3>
 
                 <div className="icon mt-4">
-                  <a href='https://github.com/AprilianoPeramu'><FaGithub /></a>
-                  <a href='https://twitter.com/gorseweebs'><FaTwitter /></a>
-                  <a href='https://www.linkedin.com/in/apriliano-peramu-a51706252/'><FaLinkedin /></a>
+                  <a href='https://github.com/AprilianoPeramu' target='_blank' ><FaGithub /></a>
+                  <a href='https://twitter.com/gorseweebs' target='_blank' ><FaTwitter /></a>
+                  <a href='https://www.linkedin.com/in/apriliano-peramu-a51706252/' target='_blank' ><FaLinkedin /></a>
                 </div>
                 <hr className='mt-4' />
                 <div className='d-flex justify-content-center text-center mt-4'>
@@ -95,7 +95,7 @@ const Home = (props) => {
                 </div>
               </div>
               <div className='text-center mt-2'>
-                <button type="button" className="btn btn-secondary text-center"><a href='https://drive.google.com/file/d/17man4cdBGA8zwz3hgkyZwdBr9xm_P48q/view?usp=sharing'>Download CV </a></button>
+                <button type="button" className="btn btn-secondary text-center"><a href='https://drive.google.com/file/d/17man4cdBGA8zwz3hgkyZwdBr9xm_P48q/view?usp=sharing' target='_blank' >Download CV </a></button>
               </div>
             </div>
           </div>
