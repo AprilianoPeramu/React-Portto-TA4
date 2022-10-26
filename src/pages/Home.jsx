@@ -246,8 +246,8 @@ const Home = (props) => {
                     <input type="email" name='user_email' class="form-control" id="email" aria-describedby="emailHelp" placeholder='Your Email'/>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
-                    <textarea class="form-control" name='massage' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-secondary">Submit</button>
