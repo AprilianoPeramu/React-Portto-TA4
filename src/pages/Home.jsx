@@ -18,6 +18,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { HashLink, } from 'react-router-hash-link';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 
 
 const Home = (props) => {
@@ -26,6 +27,8 @@ const Home = (props) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    e.target.reset();
+
 
     emailjs.sendForm('service_pjt1pqr', 'template_j0zrf5j', form.current, 'NFJoUVFJXQaqKs6Nq')
       .then((result) => {
@@ -243,11 +246,11 @@ const Home = (props) => {
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" name='user_email' class="form-control" id="email" aria-describedby="emailHelp" placeholder='Your Email'/>
+                    <input type="email"  name='user_email' class="form-control" id="email" aria-describedby="emailHelp" placeholder='Your Email'/>
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
+                    <textarea class="form-control"  name='message' id="exampleFormControlTextarea1" rows="3" placeholder='Type Massage'></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-secondary" value="Send">Submit</button>
