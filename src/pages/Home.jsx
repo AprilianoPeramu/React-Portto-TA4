@@ -72,7 +72,7 @@ const Home = (props) => {
       </Navbar>
 
 
-      <section className='jumbotron vh-100 d-flex align-items-center' id='home'>
+      <section className='jumbotron vh-100 d-flex align-items-center' data-aos="slide-up" id='home'>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -94,7 +94,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <div className='about d-flex align-items-center' id='about'>
+      <div className='about d-flex align-items-center' data-aos="slide-up" id='about'>
         <div className='container'>
           <div className='row text-center'>
             <div className="col mt-5">
@@ -113,7 +113,7 @@ const Home = (props) => {
         </div>
       </div>
 
-      <section id="skill">
+      <section data-aos="slide-up" id="skill">
         <div className='skills section mb-4'>
           <div className="container">
             <h2 className='section__title d-flex justify-content-center mt-4 fw-bold'>Skills</h2>
@@ -181,7 +181,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section id="blog">
+      <section data-aos="slide-up" id="blog">
         <div className="container">
           <div className="text-center my-5 mb-3">
             <h2>My Projects</h2>
@@ -239,7 +239,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className="contact mb-5" id="contact">
+      <section className="contact mb-5" id="contact" data-aos="slide-up">
         <div className="container card-body form-">
           <div className="row text-center mb-3">
             <div className="col">
